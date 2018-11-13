@@ -113,7 +113,7 @@ $("#answercontainer").hide();
 
   });
 
-});
+
 function wow()
 {
     $("#qcontent").load("./Results.html #rresult");
@@ -154,12 +154,16 @@ AbomArray[7].src = "./images/Petz4thing8.png";
 
 var num = Math.floor(Math.random() * Math.floor(8));
 console.log(num);
-    console.log($('#abomination').attr("src"));
-    $("#abomination").src = AbomArray[num].src;
-    console.log(document.getElementById("abomination"));
-    console.log(AbomArray[num].src);
-    console.log($("#abomination").src);
+    console.log($('.abomination').attr("src"));
+    var abomimg;
 
-$("#abomination").show();
- console.log($("#abomination").src);
+    abomimg = AbomArray[num].src;
+$('.abomination').attr("src", "../images/Petz4thing.png");
+    console.log(document.getElementById("abomination"));
+    console.log(AbomArray[3].src);
+    console.log($(".abomination").src);
+
+
+ console.log($(".obamanation.abomination").attr("src"));
 }
+});
