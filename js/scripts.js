@@ -115,12 +115,12 @@ $("#answercontainer").hide();
 });
 function wow()
 {
-    $("#qcontent").load("./Results.html #rresult");
+    $("#qcontent").load("Results.html #rresult");
 
 }
 function thanksihateit()
 {
-    $("#qcontent").load("./Results.html #wresult");
+    $("#qcontent").load("Results.html #wresult");
 }
 
 function abomination()
