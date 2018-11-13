@@ -1,0 +1,137 @@
+.container
+{
+  border-radius: 10px;
+  border: 1px black solid;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-right: 200px;
+  width: 200px;
+  margin-left: 0px;
+}
+.ctr2
+{
+  border-radius: 10px;
+  border: 1px black solid;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+
+}
+#sidebar
+{
+  width: 230px;
+  border-left: 1px solid;
+  border-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: 0px;
+  height: 100vh;
+  border-top-left-radius: 0px;
+  display: block;
+  overflow-x: hidden;
+  position: fixed;
+}
+@keyframes wiggle1
+{
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(1px, -1px);}
+  75% {transform: translate(-1px, 1px);}
+  100% {transform: translate(0px, 0px);}
+}
+@keyframes wiggle2
+{
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(0px, -1px);}
+  75% {transform: translate(5px, -5px);}
+  100% {transform: translate(0px, 0px);}
+}
+@keyframes wiggle3
+{
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(3px, 6px);}
+  75% {transform: translate(1px, -2px);}
+  100% {transform: translate(0px, 0px);}
+}
+.btn2
+{
+
+}
+.answers
+{
+  height:100px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+#answr1:hover
+{
+  animation: wiggle1 .1s linear infinite;
+}
+#answr2:hover
+{
+  animation: wiggle2 .1s linear infinite;
+}
+#answr3:hover
+{
+  animation: wiggle3 .1s linear infinite;
+}
+.answerbar
+{
+  width: auto;
+  padding-right: 100px;
+}
+.question
+{
+display: inline-block;
+
+margin-top: 10px;
+
+}
+.answrcol
+{
+border: 1px solid;
+margin-left: 230px;
+height: 100%;
+position: relative;
+}
+#qcontent
+{
+ height: 100%;
+}
+
+.q1
+{
+width: 500px;
+height: 600px;
+}
+
+#doopliss1
+{
+
+margin-left: 100px;
+margin-right:100px;
+}
+#doopliss2
+{
+margin-left: 250px;
+margin-bottom: 250px;
+
+}
+#doopliss3
+{
+
+margin-left:
+}
+#doopliss4
+{
+margin-left: -600px;
+background:url("../images/Doopliss1invis.png") no-repeat;
+}
+#doopliss4:hover
+{
+background:url("../images/Doopliss2invis.png") no-repeat;
+}
