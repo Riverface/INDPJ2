@@ -11,10 +11,7 @@ $("#answercontainer").hide();
   var qIterator = -1;
   var laugh = new Audio('audio/SkKid.wav');
 
-
-
-
-
+  $("#result1").hide();
   $("#reject").click(function(){
     $("#intro").hide();
     $("#sidebar").hide();
@@ -47,9 +44,10 @@ $("#answercontainer").hide();
       console.log("zoop");
       break;
       case 4:
-      $("#qcontent").load("./Results.html #rResult");
+      $("#qcontent").load("./Results.html #result1");
       console.log("zoop");
       $("#answercontainer").hide();
+
           abomination();
       break;
     }
@@ -78,6 +76,8 @@ $("#answercontainer").hide();
       $("#qcontent").load("./Results.html #result1");
       console.log("zoop");
       $("#answercontainer").hide();
+      $("#result1").show();
+    $(".abomination").show();
       abomination();
       break;
     }
@@ -104,23 +104,31 @@ $("#answercontainer").hide();
       console.log("zoop");
       break;
       case 4:
-      $("#qcontent").load("./Results.html #result1");
+      $("#result1").show();
+    $(".abomination").show();
+
       console.log("zoop");
-          abomination();
+
       $("#answercontainer").hide();
       break;
     }
 
   });
 
+});
 
 function wow()
 {
+  $("#qcontent").show();
+    $("#result1").hide();
     $("#qcontent").load("./Results.html #rresult");
+
 
 }
 function thanksihateit()
 {
+    $("#qcontent").show();
+        $("#result1").hide();
     $("#qcontent").load("./Results.html #wresult");
 
 }
@@ -128,42 +136,40 @@ function thanksihateit()
 function abomination()
 {
 
-AbomArray = new Array(8);
-AbomArray[0] = new Image();
-AbomArray[0].src = "./images/Petz4thing.png";
 
-AbomArray[1] = new Image();
-AbomArray[1].src = "./images/petz4thing2.png";
 
-AbomArray[2] = new Image();
-AbomArray[2].src = "./images/petz4thing3.png";
 
-AbomArray[3] = new Image();
-AbomArray[3].src = "./images/petz4thing4.png";
+$("#qcontent").hide();
+    AbomArray = new Array(8);
+    AbomArray[0] = new Image();
+    AbomArray[0].src = "./images/Petz4thing.png";
 
-AbomArray[4] = new Image();
-AbomArray[4].src = "./images/petz4thing5.png";
+    AbomArray[1] = new Image();
+    AbomArray[1].src = "./images/petz4thing2.png";
 
-AbomArray[5] = new Image();
-AbomArray[5].src = "./images/petz4thing6.png";
+    AbomArray[2] = new Image();
+    AbomArray[2].src = "./images/petz4thing3.png";
 
-AbomArray[6] = new Image();
-AbomArray[6].src = "./images/Petz4thing7.png";
-AbomArray[7] = new Image();
-AbomArray[7].src = "./images/Petz4thing8.png";
+    AbomArray[3] = new Image();
+    AbomArray[3].src = "./images/petz4thing4.png";
 
-var num = Math.floor(Math.random() * Math.floor(8));
-console.log(num);
-    console.log($('.abomination').attr("src"));
+    AbomArray[4] = new Image();
+    AbomArray[4].src = "./images/petz4thing5.png";
+
+    AbomArray[5] = new Image();
+    AbomArray[5].src = "./images/petz4thing6.png";
+
+    AbomArray[6] = new Image();
+    AbomArray[6].src = "./images/Petz4thing7.png";
+    AbomArray[7] = new Image();
+    AbomArray[7].src = "./images/Petz4thing8.png";
+
+    var num = Math.floor(Math.random() * Math.floor(8));
+    console.log(num);
+
+    console.log($('Results.html .abomination').attr("src"));
     var abomimg;
-
     abomimg = AbomArray[num].src;
-$('.abomination').attr("src", "../images/Petz4thing.png");
-    console.log(document.getElementById("abomination"));
-    console.log(AbomArray[3].src);
-    console.log($(".abomination").src);
+$('[name="canvas"]').attr("src", AbomArray[num].src);
 
-
- console.log($(".obamanation.abomination").attr("src"));
 }
-});
