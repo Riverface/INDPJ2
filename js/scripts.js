@@ -121,6 +121,7 @@ function wow()
 function thanksihateit()
 {
     $("#qcontent").load("Results.html #wresult");
+
 }
 
 function abomination()
