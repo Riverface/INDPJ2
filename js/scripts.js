@@ -142,27 +142,27 @@ function abomination()
 $("#qcontent").hide();
     AbomArray = new Array(8);
     AbomArray[0] = new Image();
-    AbomArray[0].src = "./images/Petz4thing.png";
+    AbomArray[0].src = "images/Petz4thing.png";
 
     AbomArray[1] = new Image();
-    AbomArray[1].src = "./images/petz4thing2.png";
+    AbomArray[1].src = "images/petz4thing2.png";
 
     AbomArray[2] = new Image();
-    AbomArray[2].src = "./images/petz4thing3.png";
+    AbomArray[2].src = "images/petz4thing3.png";
 
     AbomArray[3] = new Image();
-    AbomArray[3].src = "./images/petz4thing4.png";
+    AbomArray[3].src = "images/petz4thing4.png";
 
     AbomArray[4] = new Image();
-    AbomArray[4].src = "./images/petz4thing5.png";
+    AbomArray[4].src = "images/petz4thing5.png";
 
     AbomArray[5] = new Image();
-    AbomArray[5].src = "./images/petz4thing6.png";
+    AbomArray[5].src = "images/petz4thing6.png";
 
     AbomArray[6] = new Image();
-    AbomArray[6].src = "./images/Petz4thing7.png";
+    AbomArray[6].src = "images/Petz4thing7.png";
     AbomArray[7] = new Image();
-    AbomArray[7].src = "./images/Petz4thing8.png";
+    AbomArray[7].src = "images/Petz4thing8.png";
 
     var num = Math.floor(Math.random() * Math.floor(8));
     console.log(num);
