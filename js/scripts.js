@@ -46,6 +46,8 @@ $("#answercontainer").hide();
       case 4:
       $("#qcontent").load("./Results.html #result1");
       console.log("zoop");
+      $("#result1").show();
+    $(".abomination").show();
       $("#answercontainer").hide();
 
           abomination();
@@ -75,10 +77,10 @@ $("#answercontainer").hide();
       case 4:
       $("#qcontent").load("./Results.html #result1");
       console.log("zoop");
-      $("#answercontainer").hide();
       $("#result1").show();
     $(".abomination").show();
-      abomination();
+      $("#answercontainer").hide();
+    abomination();
       break;
     }
 
@@ -106,7 +108,7 @@ $("#answercontainer").hide();
       case 4:
       $("#result1").show();
     $(".abomination").show();
-
+    abomination();
       console.log("zoop");
 
       $("#answercontainer").hide();
@@ -142,27 +144,27 @@ function abomination()
 $("#qcontent").hide();
     AbomArray = new Array(8);
     AbomArray[0] = new Image();
-    AbomArray[0].src = "./INDPJ2/images/Petz4thing.png";
+    AbomArray[0].src = "./images/Petz4thing.png";
 
     AbomArray[1] = new Image();
-    AbomArray[1].src = "./INDPJ2/images/petz4thing2.png";
+    AbomArray[1].src = "./images/petz4thing2.png";
 
     AbomArray[2] = new Image();
-    AbomArray[2].src = "./INDPJ2/images/petz4thing3.png";
+    AbomArray[2].src = "./images/petz4thing3.png";
 
     AbomArray[3] = new Image();
-    AbomArray[3].src = "./INDPJ2/images/petz4thing4.png";
+    AbomArray[3].src = "./images/petz4thing4.png";
 
     AbomArray[4] = new Image();
-    AbomArray[4].src = "./INDPJ2/images/petz4thing5.png";
+    AbomArray[4].src = "./images/petz4thing5.png";
 
     AbomArray[5] = new Image();
-    AbomArray[5].src = "./INDPJ2/images/petz4thing6.png";
+    AbomArray[5].src = "./images/petz4thing6.png";
 
     AbomArray[6] = new Image();
-    AbomArray[6].src = "./INDPJ2/images/Petz4thing7.png";
+    AbomArray[6].src = "./images/Petz4thing7.png";
     AbomArray[7] = new Image();
-    AbomArray[7].src = "./INDPJ2/images/Petz4thing8.png";
+    AbomArray[7].src = "./images/Petz4thing8.png";
 
     var num = Math.floor(Math.random() * Math.floor(8));
     console.log(num);
