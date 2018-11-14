@@ -165,3 +165,19 @@ position:static;
 top: 300px;
 
 }
+.doop
+{
+width: 100px;
+
+}
+.doop:hover
+{
+  content: url('../images/Doopliss2.png');
+  width: 100px;
+}
+
+.doop:active
+{
+  content: url('../images/Doopliss3.png');
+  width: 100px;
+}
