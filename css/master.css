@@ -86,52 +86,82 @@
 }
 .question
 {
-display: inline-block;
+  display: inline-block;
 
-margin-top: 10px;
+  margin-top: 10px;
 
 }
 .answrcol
 {
-border: 1px solid;
-margin-left: 230px;
-height: 100%;
-position: relative;
+  border: 1px solid;
+  margin-left: 230px;
+  height: 100%;
+  position: relative;
 }
 #qcontent
 {
- height: 100%;
+
 }
 
 .q1
 {
-width: 500px;
-height: 600px;
+  width: 500px;
+  height: 100%;
+}
+.q2
+{
+  width: 400px;
 }
 
 #doopliss1
 {
-
-margin-left: 100px;
-margin-right:100px;
+position:static;
+  margin-left: 100px;
+  margin-right:100px;
 }
 #doopliss2
 {
-margin-left: 250px;
-margin-bottom: 250px;
+  margin-left: 250px;
+position:static;
+
 
 }
 #doopliss3
 {
 
-margin-left:
+
 }
 #doopliss4
 {
-margin-left: -600px;
-background:url("../images/Doopliss1invis.png") no-repeat;
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+position:static;
+top: 300px;
+  background:url("../images/Doopliss1invis.png");
+
 }
 #doopliss4:hover
 {
-background:url("../images/Doopliss2invis.png") no-repeat;
+  background:url("../images/Doopliss2invis.png");
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+position:static;
+top: 300px;
+
+}
+#doopliss4:active
+{
+
+  background:url("../images/Doopliss3.png");
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+position:static;
+top: 300px;
+
 }
