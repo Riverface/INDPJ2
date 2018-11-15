@@ -1,11 +1,13 @@
-var ans = new Array(0,0,0) ;
+var ans = new Array(0,0,0);
 
 $(document).ready(function()
 {
+
   var AbomArray;
   ans[0] = 0;
   ans[1] = 0;
   ans[2] = 0;
+
   $("#answercontainer").hide();
 
   var qIterator = -1;
@@ -14,9 +16,11 @@ $(document).ready(function()
   $("#wresult").hide();
   $("#result1").hide();
   $("#reject").click(function(){
+
     $("#intro").hide();
     $("#sidebar").hide();
     laugh.play();
+
   });
   $("#accept").click(function(){
     $("#intro").hide();
@@ -174,24 +178,22 @@ function abomination()
   }
   var num = Math.floor(Math.random() * Math.floor(8));
   console.log(num);
-
   console.log($('Results.html .abomination').attr("src"));
   var abomimg;
   abomimg = AbomArray[num].src;
   $('[name="canvas"]').attr("src", AbomArray[num].src);
-
 }
 
 function decide()
 {
   if ((ans[2] <= ans[0]) && (ans[1] <= ans[0]) )
   {
-        console.log(ans[1] + " " + ans[2] + " " + ans[0]);
+    console.log(ans[1] + " " + ans[2] + " " + ans[0]);
     $(".result3").load("Results.html .l1");
   }
   else if ((ans[2] <= ans[1]) && (ans[0] <= ans[1]) )
   {
-        console.log(ans[1] + " " + ans[2] + " " + ans[0]);
+    console.log(ans[1] + " " + ans[2] + " " + ans[0]);
     $(".result3").load("Results.html .l2");
   }
   else if ((ans[1] <= ans[2]) && (ans[0] <= ans[2]) )
@@ -199,5 +201,4 @@ function decide()
     console.log(ans[1] + " " + ans[2] + " " + ans[0]);
     $(".result3").load("Results.html .l3");
   }
-
 }
